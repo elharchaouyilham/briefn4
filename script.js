@@ -1,22 +1,19 @@
 
-
-
-
 const questions = [
   {
-    question: "Quelle est la capitale de la France ?",
-    answers: ["Paris", "Londres", "Madrid", "Berlin"],
+    question: "Quelle est la grand ville au maroc ?",
+    answers: ["casablanca", "safi", "fes", "rabat"],
     correct: 0
   },
   {
-    question: "Combien font 5 * 3 ?",
+    question: "Combien 5 * 3 ?",
     answers: ["8", "10", "15", "20"],
     correct: 2
   },
   {
-    question: "Qui a peint la Joconde ?",
-    answers: ["Picasso", "Van Gogh", "Léonard de Vinci", "Monet"],
-    correct: 2
+    question: "combien 5+13 ?",
+    answers: ["12", "18", "20", "19"],
+    correct: 1
   }
 ];
 
@@ -30,7 +27,7 @@ const prevBtn = document.getElementById("prev-btn");
 const scoreEl = document.getElementById("score");
 const playAgainBtn = document.getElementById("play-again-btn");
 
-/function loadQuestion() {
+function loadQuestion() {
   const q = questions[currentQuestion];
   questionEl.textContent = q.question;
   answersEl.innerHTML = "";
